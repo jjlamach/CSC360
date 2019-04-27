@@ -9,7 +9,7 @@ import { MeetupComponent } from './meetup/meetup.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterTwitterFeedComponent } from './footer-twitter-feed/footer-twitter-feed.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { TextbookPageComponent } from './textbook-page/textbook-page.component';
+import { TextbookBuyComponent } from './textbook-buy/textbook-buy.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { TextbookPageComponent } from './textbook-page/textbook-page.component';
     FooterTwitterFeedComponent,
     MeetupComponent,
     LandingPageComponent,
-    TextbookPageComponent
+    TextbookBuyComponent
   ],
   imports: [
     BrowserModule,
