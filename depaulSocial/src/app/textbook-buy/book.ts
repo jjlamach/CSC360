@@ -1,42 +1,44 @@
 export class book {
-  private _title:string;
-  private _isbn:number;
-  private _price:number = null;
-  private _info:string;
 
-  constructor(title:string, isbn:number, price:number) {
-    this._title = title;
+  //globals
+  private _course:string;
+  private _isbn :number;
+  private _price:number;
+  private _info :string;
+
+  constructor(course:string, isbn:number, price:number) {
+    this._course = course;
     this._isbn  = isbn;
     this._price = price;
   }
 
-  get title(): string {
-    return this._title;
+  getTitle(): string {
+    return this._course;
   }
 
-  set title(title: string) {
-    this._title = title;
+  setTitle(course: string) {
+    this._course = course;
   }
 
-  get isbn(): number {
+  getIsbn(): number {
     return this._isbn;
   }
 
-  set isbn(value: number) {
+  setIsbn(value: number) {
     this._isbn = value;
   }
 
-  get price(): number {
+  getPrice(): number {
     return this._price;
   }
 
-  set price(value: number) {
+  setPrice(value: number) {
     this._price = value;
   }
 
   toString(){
       this._info =
-        ("Title: " + this._title + "     " +
+        ("Title: " + this._course + "     " +
           "ISBN: " + this._isbn +  "     " +
           "Price: " + this._price);
     return this._info;

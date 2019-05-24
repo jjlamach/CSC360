@@ -9,17 +9,17 @@
   </div>
 
   <div style="padding: 20px">
-    <form [formGroup]="buyBooks">
+    <form>
       <div class="form-row">
         <!--course field-->
         <div class="form-group col-md-6">
-          <label for="courseSection">Enter Course Section</label>
+          <label [formControl]="courseSection" for="courseSection">Enter Course Section</label>
           <input formControlName="courseSection" type="text" class="form-control" id="courseSection" placeholder="csc360" value="">
         </div>
 
         <!--isbn field-->
         <div class="form-group col-md-6">
-          <label for="inputISBN">Enter ISBN</label>
+          <label  for="inputISBN">Enter ISBN</label>
           <input formControlName="iSBN" type="number" class="form-control" id="inputISBN" placeholder="123456789" value="">
         </div>
       </div>
